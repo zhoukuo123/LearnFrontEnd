@@ -1,0 +1,22 @@
+p {
+    font-size: 12px;
+}
+/*类别 类型*/
+.one {font-size: 18px;
+    font-weight: bold;
+}
+.two {
+    color: yellow;
+}
+/* 嵌套定义 */
+h1 .center{
+    text-align: center;
+}
+/*id 类型*/
+#left {
+    text-align: left;
+}
+/* 全局 定义 */
+* {
+
+}

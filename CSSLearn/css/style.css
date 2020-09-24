@@ -1,0 +1,64 @@
+p {
+    height: 30px; /* 段落高度 */
+    width: 600px;
+    color: red;
+    letter-spacing: 2px; /* 字符间距 */
+    /*font-size: 14px;*/
+    /* 垂直居中设置行高=段落高度 */
+    /*line-height: 40px;  行高*/
+    text-align: justify;
+    /* text-align: justify; 两端对齐*/
+    text-decoration: line-through;
+    text-indent: 2em;
+    /*font属性简化的使用*/
+    font: italic bold 16px/1.5em '思源黑体 CN';
+    /*background-color: red;*/
+    /*background-image: url("../images/1.jpg");*/
+    /*background-repeat: no-repeat;*/
+    background: url("../images/1.jpg") repeat-x;
+}
+a {
+    font-size: 22px;
+}
+a:link {
+    text-decoration: none;
+    color: #09f;
+}
+a:visited {
+    text-decoration: none;
+    color: #903;
+}
+a:hover {
+    font-size: 120%;
+    text-decoration: underline;
+    color: #03c;
+}
+a:active {
+    text-decoration: none;
+    color: #03c;
+}
+
+table, td, th {
+    border-collapse: collapse;
+    width: 20px;
+    height: 50px;
+    border: 1px solid #f00;
+}
+tr:nth-child(odd) {
+    background-color: #EAF2D3;
+}
+th {
+    color: white;
+    background-color: green;
+}
+ul {
+    list-style-image: url("../images/1.jpg");
+}
+
+div {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    line-height: 2em;
+    background-color: #f00;
+}
