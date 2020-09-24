@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    width: 700px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: "思源黑体 CN";
+    color: #1419;
+}
+
+.main {
+    width: 1200px;
+    height: 460px;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.banner {
+    width: 1200px;
+    height: 460px;
+}
+
+.banner-slide {
+    width: 1200px;
+    height: 460px;
+    background-repeat: no-repeat;
+}
+
+.slide1 {
+    background-image: url("../img/bg1.jpg")
+}
+
+.slide2 {
+    background-image: url("../img/bg2.jpg")
+}
+
+.slide3 {
+    background-image: url("../img/bg3.jpg")
+}
+
+
+

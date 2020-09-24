@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script type="text/javascript">
+    var cars1 = new Array();
+    cars1[0] = "Saab";
+    cars1[1] = "Volvo";
+
+    var cars2 = new Array("Saab", "Volvo", "BMW");
+
+    var cars3 = ["Saab", "Volvo", "BMW"];
+
+    var person = {
+        firstname:"John",
+        lastname:"Doe",
+        id:5566
+    };
+
+    console.log(person.firstname);
+    console.log(person["lastname"]);
+
+    b("hello", "world");
+
+    function b(cs1, cs2) {
+        console.log(cs1, cs2);
+    }
+
+    var c = function() {
+        console.log("lallaala");
+    }
+
+    c();
+
+    function d() {
+        return "this is return function";
+    }
+
+    var d1 = d();
+    console.log(d1);
+
+    for (var i = 0; i < 10; i++) {
+        console.log('i = ' + i);
+    }
+
+    var person = {
+        name : 'json',
+        age : 25,
+        sg : 170
+    }
+
+    for (key in person) {
+        console.log(person[key]);
+    }
+
+
+
+</script>
+
+
+<div id="intro">HelloWorld</div>
+
+<div id="main">
+    <p>The DOM is very useful.</p>
+</div>
+
+<div class="content">1</div>
+<div class="content">2</div>
+<div class="content">3</div>
+<div class="content">4</div>
+
+<script type="text/javascript">
+    var intro = document.getElementById("intro");
+
+    var main = document.getElementById("main");
+    var p = main.getElementsByTagName("p")[0];
+
+    var content = document.getElementsByClassName("content")[0];
+
+
+</script>
+
+<div id="main" data="nihao">123</div>
+<img src="1.jpg" alt="" id="image">
+<a id="goUrl" href="">百度</a>
+
+<script type="text/javascript">
+    var main = document.getElementById("main");
+    main.innerHTML = "helloworld";
+    /**
+     * element.getAttribute()
+     * element.setAttribute() // 添加或者修改
+     * element.src
+     * element.href
+     */
+    // alert(main.getAttribute("data"));
+    main.setAttribute("data", "buhao");
+    main.setAttribute("dd", "ddname");
+
+    var image = document.getElementById("image");
+    image.src = "2.jpg";
+
+    var goUrl = document.getElementById("goUrl");
+    goUrl.href = "http://www.baidu.com";
+
+</script>
+
+</body>
+</html>

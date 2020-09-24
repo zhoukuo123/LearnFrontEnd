@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        #container {
+            height: 750px;
+            width: 890px;
+            margin: 0 auto;
+        }
+        #header {
+            height: 100px;
+            background-color: #f00;
+        }
+        #navbar {
+            height: 50px;
+            background-color: #f0f;
+        }
+        #main {
+            height: 500px;
+            /*background-color: #0000ff;*/
+        }
+        .aside {
+            float: left;
+            width: 100px;
+            height: 500px;
+        }
+        #aside1 {
+            background-color: #0ff;
+        }
+        #aside2 {
+            background-color: #38e000;
+        }
+        #content {
+            float: left;
+            width: 690px;
+            height: 500px;
+            background-color: #ffbe00;
+        }
+        #footer {
+            height: 100px;
+            background-color: #80f;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="header">头部</div>
+    <div id="navbar">导航</div>
+
+    <div id="main">
+        <div id="aside1" class="aside">左侧</div>
+        <div id="content">中间内容</div>
+        <div id="aside2" class="aside">右侧</div>
+    </div>
+    <div id="footer">底部</div>
+</div>
+</body>
+</html>

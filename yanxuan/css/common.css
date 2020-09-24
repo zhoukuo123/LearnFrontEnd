@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+/* 清浮动 */
+.clear-fix::after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+}
+
+.clear-fix {
+    *zoom: 1;
+}
+
+/* 每一行的主要内容 */
+.row {
+    width: 1090px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* 每一行主要内容的头部信息 */
+.header {
+    margin-bottom: 20px;
+}
+
+.header .title {
+    float: left;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+    margin-right: 20px;
+}
+
+.header .subtitle {
+    float: left;
+    font-size: 14px;
+    line-height: 1;
+    margin-top: 13px;
+}
+
+.header .more {
+    font-size: 14px;
+    line-height: 1;
+    margin-left: 30px;
+    margin-top: 14px;
+    float: right;
+}
+
+a {
+    color: #333;
+
+}
+
+a:hover {
+    color: #b4a078;
+}
+
+/* 区分左边/右边内容 */
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+/* 用到component图片的类 */
+.cmp,
+.site-nav .download-app::before,
+.site-nav .service::after {
+    background: url("../images/component.png");
+}
+
+/* 上一页/ 下一页按钮 */
+.arrow-btn {
+    position: absolute;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    top: 200px;
+    cursor: pointer;
+    border: none;
+    background: url("../images/icon-normal.png") #D0C4AF;
+}
+
+.arrow-btn:hover {
+    background-color: #B19D79;
+}
+
+.arrow-btn.pre {
+    background-position: 0 -4700px;
+}
+
+.arrow-btn.next {
+    background-position: 0 -4880px;
+}

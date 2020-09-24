@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="div1">
+    <p id="p1">I am p1</p>
+    <p id="p2">I am p2</p>
+</div>
+
+<script type="text/javascript">
+    /**
+     * document.createElement("p")
+     * document.createTextNode("新增")
+     * parent.appendChild(child);
+     * parent.removeChild(child);
+     */
+    var p = document.createElement("p"); // <p></p>
+    var word = document.createTextNode("I am new p tag"); // I am new p tag
+
+    p.appendChild(word); // <p>I am new p tag</p>
+
+    var div1 = document.getElementById("div1");
+    div1.appendChild(p);
+
+    var p1 = document.getElementById("p1");
+    div1.removeChild(p1);
+</script>
+
+</body>
+</html>

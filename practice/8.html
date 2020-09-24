@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>计算器</h1>
+<p>
+    <input type="text" id="num1">
+    <input type="button" value="计算" onclick="abc()">
+</p>
+<p>
+    <span id="result" style="color: #F00">计算结果：</span>
+</p>
+</body>
+<script type="text/javascript">
+    function abc(){
+        var num1=document.getElementById("num1").value;
+        var result=document.getElementById("result");
+        try{
+            var res=eval(num1);
+            result.innerHTML=res;
+        }catch(e){
+            result.innerHTML="表达式异常";
+        }
+    }
+</script>
+</html>
